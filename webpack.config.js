@@ -4,7 +4,7 @@ const Dotenv = require('dotenv-webpack')
 const deps = require('./package.json').dependencies
 module.exports = (_, argv) => ({
   output: {
-    publicPath: 'https://picker-app-host.onrender.com/',
+    publicPath: 'https://jazzy-twilight-5d6b3a.netlify.app/',
   },
 
   resolve: {
@@ -45,9 +45,9 @@ module.exports = (_, argv) => ({
       filename: 'remoteEntry.js',
       remotes: {
         ColorPicker:
-          'mf_colorpicker@https://picker-app-mf-colorpicker.onrender.com/remoteEntry.js',
+          'mf_colorpicker@https://peaceful-granita-0f2e2d.netlify.app/remoteEntry.js',
         ColorList:
-          'mf_colorlist@https://picker-app-mf-colorlist.onrender.com/remoteEntry.js',
+          'mf_colorlist@https://main--hilarious-sunshine-221930.netlify.app/remoteEntry.js',
       },
       exposes: {},
       shared: {
